@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="footer-brand">
         <img className="logo2" src ='./LOGOw.png'/>
         <div className="footer-apps">
-          <a href="#" ><img src="app-store.jpg" alt="App Store" /></a>
-          <a href="#" ><img src="google-play.png" alt="Google Play" /></a>
+          <a href="#" ><img className='appp' src="app01.png" alt="App Store" /></a>
+          <a href="#" ><img className='playy' src="play01.png" alt="Google Play" /></a>
         </div>
         <div className="footer-company">
           <p>Company # 490039-445, Registered with <br />House of companies.</p>
@@ -45,10 +45,10 @@ const Footer = () => {
           </div> */}
         </div>
         <div className="footer-social">
-          <a href="#"><i className="fab fa-facebook"></i></a>
-          <a href="#"><i className="fab fa-twitter"></i></a>
-          <a href="#"><i className="fab fa-tiktok"></i></a>
-          <a href="#"><i className="fab fa-instagram"></i></a>
+          <a href="#"><img src="fb.png" alt="" /></a>
+          <a href="#"><img src="inst.png" alt="" /></a>
+          <a href="#"><img src="tw.png" alt="" /></a>
+          <a href="#"><img src="in.png" alt="" /></a>
         </div>
         
         
