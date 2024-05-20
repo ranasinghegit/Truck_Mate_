@@ -1,0 +1,110 @@
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(159, 44, 44);
+  padding: 10px;
+  margin: 20px;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  height: 150px;
+  width: 170px;
+}
+
+.navv {
+  background-color: #DBEFF9;
+  padding: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 3;
+}
+
+.navv a {
+  font-size: 11pt;
+  color: rgb(0, 0, 0);
+  margin-inline-start: 100px;
+  text-decoration: none;
+}
+
+.navv a:hover {
+  background-color: #318FE7;
+  color: rgb(255, 255, 255);
+  padding: 9px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.navv a:active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.you {
+  background-color: #328fe7;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.Loginn {
+  background-color: rgb(255, 255, 255);
+  padding: 9px;
+  color: #00a650;
+  border-radius: 10px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navv {
+    display: none;
+    flex-direction: column;
+    width: 40%;
+    position:relative;
+    top: px;
+    left: 0;
+    background-color: #DBEFF9;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+  }
+
+  .navv.active {
+    display: flex;
+  }
+
+  .navv a {
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    border-bottom: 1px solid #ddd;
+    margin-inline-start: 0;
+  }
+
+  .navv a:last-child {
+    border-bottom: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .logo {
+    height: 100px;
+    width: 120px;
+  }
+}

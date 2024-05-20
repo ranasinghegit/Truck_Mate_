@@ -1,0 +1,188 @@
+/* Footer Styles */
+footer {
+    background-color: #D9D9D9;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+  .logo2{width: 20rem;}
+  
+  .subscription {
+    width: 30%;
+  }
+  
+  .legal-pages,
+  .important-links {
+    width: 20%;
+  }
+  
+  .legal-pages ul,
+  .important-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .company-info {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .app-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .app-links a {
+    margin: 0 10px;
+  }
+
+  /* ==================================== */
+
+
+  footer {
+    background-color: #D9D9D9;
+    padding: 40px 0;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-left: -100px;
+  }
+ 
+  .footer-brand h1 {
+    font-size: 24px;
+    color: #00a650;
+  }
+  
+  .footer-subscription {
+    width: 300px;
+    margin-left: 100px;
+    margin-top: -10px;
+
+
+  }
+  
+  .footer-subscription h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: black;
+    
+  }
+  
+  .subscription-input {
+    display: flex;
+    margin-bottom: 10px;
+    height: 45px;
+    
+  }
+
+  
+  .subscription-input input {
+    flex-grow: 1;
+    padding: 10px 30px;
+    padding-right: 100px;
+    border: 1px solid #ccc;
+    border-radius: 30px ;
+  }
+  
+  .subscription-input button {
+    background-color: #328fe7;
+    color: #fff;
+    border: none;
+    padding: 6px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: -40px;
+    font-size: 15px;
+  }
+  
+  .footer-subscription p {
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .footer-links {
+    display: flex;
+  }
+  
+  .footer-link-group {
+    margin-left: 400px;
+    color: #000000
+
+  }
+  
+  .footer-link-group h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-link-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-link-group li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-social {
+    margin: 0 20px;
+  }
+  
+  .footer-social a {
+    color: #00a650;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .footer-company p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .footer-apps a {
+    margin-right: 30px;
+    /* margin-top: 00px; */
+  }
+  .footer-apps img {width: 150px;
+  margin-top: 30px;
+margin-bottom: 10px;}
+  
+ 
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .footer-bottom-links a {
+    color: #777;
+    font-size: 14px;
+    margin-right: 20px;
+    text-decoration: none;
+  }
