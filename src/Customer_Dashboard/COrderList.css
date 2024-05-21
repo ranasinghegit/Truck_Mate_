@@ -1,0 +1,68 @@
+/* COrderList.css */
+.order-list {
+    display:block;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+    width: 1000px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  
+  .order-section {
+    background-color: #DBEFF9;
+    padding: 20px;
+    border-radius: 5px;
+    border: solid 1px;
+    margin-bottom: 50px;
+    /* width: 10px; */
+   
+  }
+  
+  .order-items {
+    margin-bottom: 10px;
+    display:flow-root;
+    display: flex ;
+    flex-wrap:wrap;
+  }
+  
+  .order-item {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* margin-bottom: 10px; */
+/* ============== */
+
+border: solid 1px;
+border-radius: 10px;
+width: 25rem;
+margin-bottom: 10px;
+/* ================= */
+
+
+  }
+  
+  .order-details span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .order-actions button {
+    margin-left: 10px;
+  }
+  
+  .see-all {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  }
