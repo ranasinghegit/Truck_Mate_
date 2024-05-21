@@ -54,6 +54,11 @@ margin-bottom: 10px;
   
   .order-actions button {
     margin-left: 10px;
+background-color: rgb(48, 125, 225);   
+ padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
   }
   
   .see-all {
@@ -66,3 +71,41 @@ margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* Responsive Styles */
+@media (max-width: 1024px) {
+  .order-list {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .order-list {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .order-item {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-section {
+      padding: 10px;
+  }
+
+  .order-item {
+      padding: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .order-actions button {
+      margin: 10px 0 0 0;
+  }
+
+  .see-all {
+      width: 100%;
+      text-align: center;
+  }
+}

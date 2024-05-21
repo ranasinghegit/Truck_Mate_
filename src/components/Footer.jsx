@@ -23,6 +23,14 @@ const Footer = () => {
           </div>
           <p>we wont spam, read our email policy</p>
         </div>
+        <div className="footer-social">
+          <a href="#"><img src="fb.png" alt="" /></a>
+          <a href="#"><img src="inst.png" alt="" /></a>
+          <a href="#"><img src="tw.png" alt="" /></a>
+          <a href="#"><img src="in.png" alt="" /></a>
+        </div>
+
+
         <div className="footer-links">
           <div className="footer-link-group">
             <h4>Legal Pages <br /><br /></h4>
@@ -44,12 +52,7 @@ const Footer = () => {
             </ul>
           </div> */}
         </div>
-        <div className="footer-social">
-          <a href="#"><img src="fb.png" alt="" /></a>
-          <a href="#"><img src="inst.png" alt="" /></a>
-          <a href="#"><img src="tw.png" alt="" /></a>
-          <a href="#"><img src="in.png" alt="" /></a>
-        </div>
+      
         
         
       </div>
