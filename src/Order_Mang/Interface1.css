@@ -1,0 +1,100 @@
+.form-group {
+    width: 45%;
+    margin: 50px auto;
+    
+  
+  }
+  
+  h3{
+    margin-left: 1px;
+  }
+  
+  
+  input[type="text"],
+  input[type="tel"],
+  textarea,
+  .react-datepicker__input-container input {
+    padding: 10px 180px;
+    border: 1px solid #928b8b;
+    border-radius: 5px;
+    margin-left: 180px;
+    margin: 1px;
+    margin-bottom: 0.5px;
+  }
+  
+  .form-group label {
+    display: flex;
+    display: inline-block;
+    font-size: 16px;
+    
+  }
+  
+  .button-container {
+    display: flex;
+   justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+  select,
+  .react-datepicker__input-container input {
+    padding: 10px 210px;
+    border: 1px solid #928b8b;
+    border-radius: 5px;
+    margin-left: 180px;
+    margin: 1px;
+    margin-bottom: 0.5px;
+    font-size: 15px;
+  justify-content: center;
+  
+  }
+  
+  .button1{
+  
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+  
+  }
+  
+  .button2{
+  
+    background-color: #121213;
+    color: #fff;
+    border: none;
+    padding: 15px 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .button3{
+  
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 95px;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 150px;
+    font-size: 15px;
+  }
+  .date-time-picker-row {
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    margin-left: 5px;
+  
+  }
+  .radiobtn{
+    display: flex;
+    justify-content:space-around;
+    margin-left: 190px;
+    margin-right: 310px;
+  }
+  
+  

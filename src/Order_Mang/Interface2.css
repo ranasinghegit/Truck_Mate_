@@ -1,0 +1,71 @@
+.order-summary-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .order-summary-box {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 6px;
+    margin-left: 100px;
+    margin-top: 80px;
+    
+  }
+
+  .button1{
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 40px;
+    
+   }
+   .button2{
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: center;
+    
+    margin-top: 30px;
+    
+   }
+
+  
+  .payment-section {
+    margin-top: 20px;
+    margin-left: 200px;
+    
+   
+  }
+  
+  select,
+  .react-datepicker__input-container input {
+    padding: 8px 100px;
+    border: 1px solid #928b8b;
+    border-radius: 5px;
+    margin-left: 180px;
+    margin: 1px;
+    margin-bottom: 0.5px;
+    font-size: 15px;
+    justify-content: center;
+  
+  }
+ 
+     input[type="text"]
+    {
+       padding: 10px 80px;
+       border: 1px solid #928b8b;
+       border-radius: 5px;
+       margin-left: 100px;
+       margin: 1px;
+       margin-bottom: 0.5px;
+     }
+   
