@@ -1,10 +1,10 @@
-/* Header Styles */
 header {
+  /* max-width: 500px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: rgb(159, 44, 44);
-  padding: 10px;
+  padding: 0px;
   margin: 20px;
 }
 
@@ -18,7 +18,7 @@ header {
 }
 
 .navv {
-  background-color: #DBEFF9;
+  background-color: #b4d6e7;
   padding: 20px;
   border-radius: 15px;
   text-decoration: none;
@@ -32,8 +32,9 @@ header {
 .navv a {
   font-size: 11pt;
   color: rgb(0, 0, 0);
-  margin-inline-start: 100px;
+  margin-inline-start: 10px;
   text-decoration: none;
+  padding: 9px;
 }
 
 .navv a:hover {
@@ -51,15 +52,16 @@ header {
 }
 
 .you {
-  background-color: #328fe7;
+  /* background-color: #97bee3; */
+  /* color: white !important;; */
   padding: 9px;
   border-radius: 10px;
 }
 
 .Loginn {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(31, 29, 29);
   padding: 9px;
-  color: #00a650;
+  color: #ffffff !important;
   border-radius: 10px;
 }
 
@@ -88,7 +90,7 @@ header {
   }
 
   .navv a {
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     width: 50%;
     border-bottom: 1px solid #ddd;

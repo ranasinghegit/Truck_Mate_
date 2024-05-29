@@ -1,9 +1,20 @@
 /* Order List Styles */
-.orld {
+.orlddd {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 20px;
+    flex-basis: 50%;
+    /* text-align: center; */
+
+  }
+  .available-orderss{
+    border-right: 1px solid #ccc ;
+
+  }
+  .picked-orderss{
+    border-left: 1px solid #ccc ;
   }
   
   .personal-details {
@@ -17,23 +28,31 @@
     margin-right: auto;
   }
   
-  .available-orders,
-  .picked-orders {
+  .available-orderss,
+  .picked-orderss {
     flex: 1;
     min-width: 300px;
     max-width: 45%;
     padding: 10px;
   }
+
+  .available-orderss h2,
+  .picked-orderss h2{ padding-left:15px;
+
+  }
+ 
   
-  .order-item {
+  .order-itemm {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ccc;
+    /* border-right:2px solid #ccc; */
+    
   }
   
-  .order-details {
+  .order-detaills {
     flex-grow: 1;
     border: 2px solid #ccc;
     padding: 10px;
@@ -44,21 +63,22 @@
     margin-right: auto;
   }
   
-  .order-actions {
+  .order-actionns {
     padding-left: 200px;
   }
   
-  .bt22{
-    background-color: white;
-    border:1px solid;
+  .btt22{
+    background-color: white !important;
+    border:1px solid !important;
+    color: black !important;;
 
 }
 
-.bt23{
+.btt23{
     background-color: #318FE7;
     border:5px;
 }
-  .order-actions button {
+  .order-actionns button {
     padding: 10px;
     /* border: ; */
     border-radius: 5px;
@@ -66,10 +86,11 @@
   }
    
 
-  .bt4 {
+  .btt4 {
     margin: 20px auto;
     padding: 5px;
     width: 80px;
+    
     border-radius: 5px;
   }
   
@@ -95,7 +116,7 @@
   
   /* Responsive styles */
   @media (max-width: 768px) {
-    .personal-details {
+    .personal-detaills {
       margin-left: auto;
       margin-right: auto;
       font-size: 12px;
@@ -105,30 +126,30 @@
       flex-direction: column;
     }
   
-    .order-actions {
+    .order-actionns {
       padding-left: 0;
       text-align: center;
     }
   
-    .bt4, .see {
+    .btt4, .see {
       margin-left: auto;
       margin-right: auto;
     }
   }
   
   @media (max-width: 480px) {
-    .orld {
+    .orlddd {
       flex-direction: column;
       align-items: center;
     }
   
-    .available-orders,
-    .picked-orders {
+    .available-orderss,
+    .picked-orderss {
       max-width: 100%;
       padding: 10px 0;
     }
   
-    .order-details {
+    .order-detaills {
       margin: 10px 0;
     }
   }

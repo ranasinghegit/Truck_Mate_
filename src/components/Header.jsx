@@ -6,14 +6,20 @@ function Header() {
   return (
     <header>
       <div className="logo-container">
-        <img className="logo" src ='./LOGO.png'/>
+        <a href="Homepage"><img   className="logo" src ='./LOGO.png'/>
+        </a>
       </div>
       <nav className='navv'>
-        <a href="#">Home</a>
+        <a href="Homepage">Home</a>
         <a href="#">TrackOrder</a>
         <a href="#">ManageOrder</a>
         <a href="#">Directions</a>
-        <a href="#" className='you'>YourAccount</a>
+        <a href="YourProfile" className='you'>YourAccount</a>
+        {/* ======================= */}
+        <a href="YourProfileD" className='you'>YourAccountD</a>
+        <a href="YourProfileA" className='you'>YourAccountA</a>
+
+        {/* ======================= */}
         <a href="#" className='Loginn'>Login/Signup</a>
       </nav>
       

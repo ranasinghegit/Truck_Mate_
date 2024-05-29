@@ -12,12 +12,12 @@ const availableOrders = [
 
 function AvailableOrderList() {
   return (
-    <div className="available-orders">
+    <div className="available-orderss">
       <h2>Available Orders</h2>
       {availableOrders.map((order) => (
         <OrderItem  key={order.id} order={order} />
       ))}
-      <button className='bt4' >MORE</button>
+      <button className='btt4' >MORE</button>
     </div>
   );
 }

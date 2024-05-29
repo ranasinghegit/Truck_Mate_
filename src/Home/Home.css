@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #00a650;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .hero button {
+    background-color: #fff;
+    color: #00a650;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .chat-mockup {
+    margin-top: 20px;
+  }
+  
+  /* Exclusive Deals Section */
+  .exclusive-deals {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .deal-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .deal-category {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .deal-category img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Popular Categories Section */
+  .popular-categories {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .category {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .category img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  /* Main Locations Section */
+  .main-locations {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .locations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .location {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .location img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Truck Mate App Section */
+  .truck-mate-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .app-info {
+    text-align: center;
+    margin-right: 40px;
+  }
+  
+  .app-links a {
+    margin: 10px;
+  }
+  
+  .app-links img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  /* Partner Sections */
+  .partner-sections {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .partner-section {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .partner-section button {
+    background-color: #00a650;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* About Us Section */
+  .about-us {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .about-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-item {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .stat {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #f0f0f0;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-brand h1 {
+    font-size: 24px;
+    color: #00a650;
+  }
+  
+  .footer-links {
+    display: flex;
+  }
+  
+  .footer-link-group {
+    margin: 20px;
+  }
+  
+  .footer-link-group h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-link-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-link-group li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-link-group a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-social a {
+    color: #00a650;
+    font-size: 24px;
+    margin: 10px;
+  }
+  
+  .footer-apps a {
+    margin: 10px;
+  }
+  
+  .footer-apps img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .footer-company p {
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    header nav,
+    .deal-categories,
+    .categories,
+    .locations,
+    .truck-mate-app,
+    .partner-sections,
+    .about-info,
+    .stats,
+    footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav a,
+    .deal-category,
+    .category,
+    .location,
+    .app-info,
+    .partner-section,
+    .about-item,
+    .stat,
+    .footer-links,
+    .footer-social,
+    .footer-apps {
+      margin: 10px 0;
+    }
+  }

@@ -6,11 +6,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width:100%;
+    /* max-height: 100px; */
+    /* height: 100px; */
   }
-  .footer-brand{
-    margin-left:-50px;
-  }
+
 
   .logo2{width: 20rem;}
   
@@ -64,7 +63,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 30px;
-    margin-left: 0px;
+    margin-left: -100px;
   }
  
   .footer-brand h1 {
@@ -74,9 +73,8 @@ footer {
   
   .footer-subscription {
     width: 300px;
-    margin-left: 0px;
+    margin-left: 100px;
     margin-top: -10px;
-    padding-left: 60px;
 
 
   }
@@ -86,7 +84,7 @@ footer {
     margin-bottom: 30px;
     color: black;
     
-  } 
+  }
   
   .subscription-input {
     display: flex;
@@ -122,11 +120,10 @@ footer {
   
   .footer-links {
     display: flex;
-    margin-left: -200px;
   }
   
   .footer-link-group {
-    margin-left: 300px;
+    margin-left: 400px;
     color: #000000
 
   }
@@ -183,7 +180,7 @@ margin-bottom: 10px;}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0px;
+    padding-top: 20px;
     border-top: 1px solid #ccc;
     margin-bottom: -40px;
     background-color: #06031e;
@@ -199,7 +196,7 @@ margin-bottom: 10px;}
   .footer-bottom-links a {
     color: #777;
     font-size: 14px;
-    margin-right: 30px;
+    margin-right: 20px;
     text-decoration: none;
 
   }
@@ -269,4 +266,4 @@ margin-bottom: 10px;}
     .footer-bottom-links a {
         margin: 5px 10px;
     }
-}
+  }

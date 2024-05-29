@@ -1,13 +1,12 @@
-// components/OrderItem.js
 import React from 'react';
 
 function OrderItem({ order }) {
   const { name, from, to, date, time, status } = order;
 
   return (
-    <div className="order-item">
+    <div className="order-itemm">
 
-      <div className="order-details">
+      <div className="order-detaills">
 
         <div >
         <div>{name}</div>
@@ -18,9 +17,9 @@ function OrderItem({ order }) {
 
 
         <div className="order-actions">
-        <button className='bt22'>Location</button>
+        <button className='btt22'>Location</button>
         {/* {status ? <button disabled>{status}</button> :  */}
-        <button className='bt23'>Pick</button>
+        <button className='btt23'>Pick</button>
       </div>
 
 
