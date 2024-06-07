@@ -21,7 +21,7 @@ const SignUp = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const { name, email, mobileNumber, nicNumber, password } = formData;
-        
+
         // Basic validations
         if (!name || !email || !mobileNumber || !nicNumber || !password) {
             alert('All fields are required');
@@ -40,7 +40,22 @@ const SignUp = () => {
             return;
         }
 
-        console.log('Form submitted:', formData);
+        // Send form data to the backend
+        fetch('http://localhost:3001/signup', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.text())
+        .then(data => {
+            alert(data);
+            console.log('Form submitted:', formData);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
     };
 
     return (
