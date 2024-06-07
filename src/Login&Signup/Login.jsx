@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
-    const [loginType, setLoginType] = useState('user');
+    const [loginType, setLoginType] = useState('');
     const [formData, setFormData] = useState({
         email: '',
         password: '',
         rememberMe: false
     });
+    const navigate = useNavigate();
 
     const handleLoginTypeChange = (type) => {
         setLoginType(type);
@@ -23,7 +24,12 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const { email, password } = formData;
+        const { email, password, rememberMe } = formData;
+
+        if (!loginType) {
+            alert('Choose your category');
+            return;
+        }
         if (!email || !password) {
             alert('All fields are required');
             return;
@@ -32,8 +38,57 @@ const Login = () => {
             alert('Password must be at least 8 characters');
             return;
         }
-        console.log('Form submitted:', formData);
+
+        fetch('http://localhost:3001/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email, password, loginType })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                if (rememberMe) {
+                    localStorage.setItem('email', email);
+                    localStorage.setItem('password', password);
+                } else {
+                    localStorage.removeItem('email');
+                    localStorage.removeItem('password');
+                }
+                alert('Login successful!');
+                console.log('Form submitted:', formData, 'Login type:', loginType);
+            } else {
+                alert('Invalid email or password');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
     };
+
+    const handleSignupClick = (e) => {
+        if (!loginType) {
+            e.preventDefault();
+            alert('Please choose your user state');
+        }
+    };
+
+    useEffect(() => {
+        const savedEmail = localStorage.getItem('email');
+        const savedPassword = localStorage.getItem('password');
+        if (savedEmail && savedPassword) {
+            setFormData({ email: savedEmail, password: savedPassword, rememberMe: true });
+        }
+    }, []);
+
+    useEffect(() => {
+        if (loginType === 'driver') {
+            navigate('/driver-login');
+        } else if (loginType === 'admin') {
+            navigate('/admin-login');
+        }
+    }, [loginType, navigate]);
 
     return (
         <div className="login-container">
@@ -58,43 +113,43 @@ const Login = () => {
                 </button>
             </div>
             <form onSubmit={handleSubmit} className="login-form">
-                <p style={{fontSize:'30px',fontWeight:'normal'}}>LOG IN YOUR ACCOUNT</p>
-                <p>Don't have an account? <Link to="/signup">SIGN UP</Link></p>
-                <br/><br/><br/><br/>
+                <p style={{ fontSize: '30px', fontWeight: 'normal' }}>LOG IN YOUR ACCOUNT</p>
+                <p>Don't have an account? <Link to="/signup" onClick={handleSignupClick}>SIGN UP</Link></p>
+                <br /><br /><br /><br />
                 <div>
                     <label>Your Email</label>
-                    <input 
-                        type="email" 
-                        name="email" 
-                        value={formData.email} 
-                        onChange={handleChange} 
-                        required 
+                    <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
                     />
                 </div>
-                <br/>
+                <br />
                 <div>
                     <label>Your Password</label>
-                    <input 
-                        type="password" 
-                        name="password" 
-                        value={formData.password} 
-                        onChange={handleChange} 
-                        required 
+                    <input
+                        type="password"
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                        required
                         minLength="8"
                     />
                 </div>
                 <div className="remember-me">
-                    <input 
-                        type="checkbox" 
-                        name="rememberMe" 
-                        checked={formData.rememberMe} 
-                        onChange={handleChange} 
+                    <input
+                        type="checkbox"
+                        name="rememberMe"
+                        checked={formData.rememberMe}
+                        onChange={handleChange}
                     />
                     <label>Remember me</label>
                 </div>
                 <button type="submit" className="login-submit">LOG IN</button>
             </form>
-            <style >{`
+            <style>{`
                 .login-container {
                     max-width: 600px;
                     margin: 30px auto;
