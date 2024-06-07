@@ -59,12 +59,17 @@ footer {
   }
   
   .footer-top {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin-bottom: 30px;
-    margin-left: -100px;
+  
   }
+  .footer-brand{
+    padding-left: 100px;
+  }
+  
  
   .footer-brand h1 {
     font-size: 24px;
@@ -118,12 +123,10 @@ footer {
     color: #000000;
   }
   
-  .footer-links {
-    display: flex;
-  }
+ 
   
   .footer-link-group {
-    margin-left: 400px;
+    margin-left: 100px;
     color: #000000
 
   }
@@ -198,6 +201,10 @@ margin-bottom: 10px;}
     font-size: 14px;
     margin-right: 20px;
     text-decoration: none;
+
+  }
+  .footer-bottom-links{
+    padding-bottom: 20px;
 
   }
 

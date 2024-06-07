@@ -1,0 +1,11 @@
+/* src/App.css */
+.DApp {
+  height: 1000px !important;
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+

@@ -1,0 +1,57 @@
+/* src/components/Sidebar.css */
+
+/* Container styling */
+.sidebar {
+  width: 240px; /* Width for sidebar */
+  background-color: #072b5a; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded corners */
+  font-family: 'Roboto', sans-serif; /* Font family */
+}
+
+/* Header styling */
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #fff; /* White text color */
+  border-bottom: 2px solid #fff; /* Divider line below heading */
+  padding-bottom: 10px; /* Add some space below heading */
+}
+
+/* List styling */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+/* Link styling */
+.sidebar ul li a {
+  text-decoration: none;
+  color: #f8f8f9; /* White text color */
+  display: block; /* Block-level display */
+  background-color: #51555c;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s; /* Smooth transitions */
+}
+
+.sidebar ul li a:hover {
+  background-color: #007bff; /* Light blue on hover */
+}
+
+/* Active link styling */
+.sidebar ul li.active a {
+  font-weight: bold; /* Bold font for active link */
+  background-color: #007bff; /* Blue background for active link */
+}
+
+/* Icon styling */
+.sidebar ul li a .icon {
+  margin-right: 10px; /* Space between icon and text */
+}

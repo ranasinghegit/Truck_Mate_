@@ -1,9 +1,10 @@
 header {
+  background-color: #ffffff !important;
   /* max-width: 500px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgb(159, 44, 44);
+  color: black  ;
   padding: 0px;
   margin: 20px;
 }
@@ -18,7 +19,7 @@ header {
 }
 
 .navv {
-  background-color: #b4d6e7;
+  background-color: #85cef2;
   padding: 20px;
   border-radius: 15px;
   text-decoration: none;
