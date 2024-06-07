@@ -1,9 +1,10 @@
 /* src/components/Sidebar.css */
 
+
 /* Container styling */
 .sidebar {
   width: 240px; /* Width for sidebar */
-  background-color: #072b5a; /* Dark background color */
+  background-color: #318FE7; /* Dark background color */
   color: #fff; /* White text color */
   padding: 15px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);

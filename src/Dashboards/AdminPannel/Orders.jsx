@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Orders.css';
+import Header from '../../components/Header';
 
 function Orders() {
   const orders = [
@@ -17,6 +18,7 @@ function Orders() {
 
   return (
     <div>
+      <Header/>
       <h1>Orders</h1>
       <h2>Pending Orders</h2>
       <table>

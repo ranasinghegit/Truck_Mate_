@@ -1,272 +1,117 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.hero {
+  border: 1px solid cornflowerblue;
+  border-radius: 10px;
+  width: 95%;
+  display: flex;
+
+  margin-left: auto ;
+  margin-right: auto;
+  padding-top: 100px !important;
+  padding-bottom: 0px !important;
+  color: #000000;
+  padding: 40px;
+}
+  .hero h1{
+    font-size: 40px !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    
+
   }
-  
-  /* Header Styles */
-  header {
-    background-color: #f0f0f0;
-    padding: 10px;
-  }
-  
-  nav a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background-color: #00a650;
-    color: #fff;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 36px;
-  }
-  
-  .hero button {
+
+
+.h11{
+  color:#318FE7;
+
+}
+
+
+.subscription-inputt{
+  width: 400px;
+}
+
+.pls{
+  width: 250px !important;
+  height: 43px !important;
+  border-radius: 10px !important;
+  padding-left: 10px;
+}
+.subscription-inputt button{
+  background-color: #318FE7 !important;
+  color: #000   !important;
+  border-radius: 10px;
+  margin-left: -20px;
+
+}
+.compl{
+  width: 100px !important;
+  margin:30px 0 0 100px;
+
+}
+
+
+.manimg{
+  width: 700px;
+  height: auto !important;
+  margin-top: -57px;
+  /* margin-top: 100px; */
+}
+
+.hero button {
     background-color: #fff;
     color: #00a650;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  .chat-mockup {
-    margin-top: 20px;
-  }
-  
-  /* Exclusive Deals Section */
-  .exclusive-deals {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .deal-categories {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .deal-category {
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .deal-category img {
-    max-width: 200px;
-    height: auto;
-  }
-  
-  /* Popular Categories Section */
-  .popular-categories {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .categories {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .category {
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .category img {
-    max-width: 150px;
-    height: auto;
-  }
-  
-  /* Main Locations Section */
-  .main-locations {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .locations {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .location {
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .location img {
-    max-width: 200px;
-    height: auto;
-  }
-  
-  /* Truck Mate App Section */
-  .truck-mate-app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-  }
-  
-  .app-info {
-    text-align: center;
-    margin-right: 40px;
-  }
-  
-  .app-links a {
-    margin: 10px;
-  }
-  
-  .app-links img {
-    max-width: 150px;
-    height: auto;
-  }
-  
-  /* Partner Sections */
-  .partner-sections {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-  }
-  
-  .partner-section {
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .partner-section button {
-    background-color: #00a650;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* About Us Section */
-  .about-us {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .about-info {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .about-item {
-    margin: 20px;
-    text-align: center;
-  }
-  
-  /* Stats Section */
-  .stats {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-  }
-  
-  .stat {
-    margin: 20px;
-    text-align: center;
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #f0f0f0;
-    padding: 40px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .footer-brand h1 {
-    font-size: 24px;
-    color: #00a650;
-  }
-  
-  .footer-links {
-    display: flex;
-  }
-  
-  .footer-link-group {
-    margin: 20px;
-  }
-  
-  .footer-link-group h4 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-link-group ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-link-group li {
-    margin-bottom: 5px;
-  }
-  
-  .footer-link-group a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .footer-social a {
-    color: #00a650;
-    font-size: 24px;
-    margin: 10px;
-  }
-  
-  .footer-apps a {
-    margin: 10px;
-  }
-  
-  .footer-apps img {
-    max-width: 150px;
-    height: auto;
-  }
-  
-  .footer-company p {
-    color: #777;
-    margin-top: 20px;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    header nav,
-    .deal-categories,
-    .categories,
-    .locations,
-    .truck-mate-app,
-    .partner-sections,
-    .about-info,
-    .stats,
-    footer {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav a,
-    .deal-category,
-    .category,
-    .location,
-    .app-info,
-    .partner-section,
-    .about-item,
-    .stat,
-    .footer-links,
-    .footer-social,
-    .footer-apps {
-      margin: 10px 0;
-    }
-  }
+}
+
+
+/* Manual parts************************* */
+/* Popular Catogory ********************************* */
+.popcato{
+  margin:50px 0px 50px 70px;
+}
+
+.popcatoin{
+  margin-top: 50px;
+  width:201px ;
+  border: rgb(201, 200, 200) solid 1px ;
+  border-radius: 12px;
+  margin-left: 20px;
+}
+
+
+
+.grocery{
+  width:200px ;
+  height: 150px;
+  border-radius:10px 10px 0 0;
+}
+
+.grotext{
+  background-color: rgb(240, 237, 231);
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px 0px 1px 20px;
+  margin-top: -5px;
+}
+
+.gp1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important ;
+}
+.grotext p{
+  color: #cb7117;
+}
+.popflex{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+/* Popular Catogory End******************************** */
+
+/* *******************Home Part 2**********************} */
+
+.homepart2{
+  width: 100% !important;
+  padding-bottom: 50px !important;
+}

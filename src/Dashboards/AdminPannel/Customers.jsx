@@ -1,6 +1,7 @@
 // src/components/Customers.js
 import React from 'react';
 import './Customers.css';
+import Header from '../../components/Header';
 
 function Customers() {
   const customers = [
@@ -13,6 +14,7 @@ function Customers() {
 
   return (
     <div>
+      <Header/>
       <h1>Customers</h1>
       <table>
         <thead>

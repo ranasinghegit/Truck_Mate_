@@ -6,10 +6,12 @@ import OrderDetails from './OrderDetails';
 import Sidebar from './Sidebar';
 import Drivers from './Drivers';
 import Customers from './Customers';
+import Header from '../../components/Header.jsx';
 import './DApp.css';
 
 function DApp() {
   return (
+    <div><Header/>
     <div className="DApp">
       <Sidebar />
       <div className="main-content">
@@ -21,6 +23,7 @@ function DApp() {
           <Route path="/customers" element={<Customers />} />
         </Routes>
       </div>
+    </div>
     </div>
   );
 }

@@ -14,10 +14,17 @@ function Header() {
         <a href="Homepage">Home</a>
         <a href="TrackOrder">TrackOrder</a>
         <a href="ManageOrder">ManageOrder</a>
-        <a href="Directions">Directions</a>
-        <a href="YourProfile" className='you'>YourAccount</a>
-        <a href="YourProfileD" className='you'>YourAccountD</a>
-        <a href="YourProfileA" className='you'>YourAccountA</a>
+        {/* <a href="Directions">Directions</a> */}
+        {/* <a href="YourProfile" className='you'>YourAccount</a> */}
+        {/* <a href="YourProfileD" className='you'>YourAccountD</a> */}
+        <div class="dropdown">
+        <a href="" class="you">ACCOUNT</a>
+        <div class="dropdown-content">
+            <a href="YourProfileA">ADMIN</a>
+            <a href="Settings">DRIVER</a>
+            <a href="Logout">CUSTOMER</a>
+        </div>
+        </div>
         <a href="Login/Signup" className='Loginn'>Login/Signup</a>
       </nav>
       
