@@ -61,11 +61,11 @@ const SignUp = () => {
     return (
         <div className="signup-container">
             <form onSubmit={handleSubmit} className="signup-form">
-                <p style={{ fontSize: '30px', fontWeight: 'normal' }}>SIGN UP AN ACCOUNT</p>
-                <p>Already have an account? <Link to="/login">LOG IN</Link></p>
+                <p style={{ fontSize: '30px', fontWeight: 'normal' }}>MAKE AN ADMIN</p>
+                <p>Go back <Link to="/admin">BACK</Link></p>
                 <br/><br/><br/>
                 <div>
-                    <label>Your Name</label>
+                    <label>Enter Name</label>
                     <input
                         type="text"
                         name="name"
@@ -76,7 +76,7 @@ const SignUp = () => {
                 </div>
                 <br/>
                 <div >
-                    <label>Your Email</label>
+                    <label>Enter Email</label>
                     <input
                         type="email"
                         name="email"
@@ -103,7 +103,7 @@ const SignUp = () => {
                 <div>
                     <label>NIC Number</label>
                     <input
-                     style={{width:'295px'}}
+                     style={{width:'270px'}}
                         type="text"
                         name="nicNumber"
                         value={formData.nicNumber}
@@ -115,7 +115,7 @@ const SignUp = () => {
                 </div>
                 <br/>
                 <div>
-                    <label>Your Password</label>
+                    <label>Enter Password</label>
                     <input
                         type="password"
                         name="password"
@@ -159,7 +159,7 @@ const SignUp = () => {
                 .signup-form input[type="text"],
                 .signup-form input[type="email"],
                 .signup-form input[type="password"] {
-                    width: 100%;
+                    width: 95%;
                     padding: 10px;
                     margin-bottom: 15px;
                     border: 1px solid #ccc;
@@ -167,6 +167,7 @@ const SignUp = () => {
                 }
 
                 .signup-submit {
+                width: 100%;
                     padding: 10px 20px;
                     border: none;
                     border-radius: 50px;

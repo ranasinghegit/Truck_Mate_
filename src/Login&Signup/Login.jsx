@@ -26,10 +26,6 @@ const Login = () => {
         e.preventDefault();
         const { email, password, rememberMe } = formData;
 
-        if (!loginType) {
-            alert('Choose your category');
-            return;
-        }
         if (!email || !password) {
             alert('All fields are required');
             return;
@@ -58,6 +54,8 @@ const Login = () => {
                 }
                 alert('Login successful!');
                 console.log('Form submitted:', formData, 'Login type:', loginType);
+                // Redirect to admin page after successful login
+                navigate('/admin');
             } else {
                 alert('Invalid email or password');
             }
@@ -82,40 +80,11 @@ const Login = () => {
         }
     }, []);
 
-    useEffect(() => {
-        if (loginType === 'driver') {
-            navigate('/driver-login');
-        } else if (loginType === 'admin') {
-            navigate('/admin-login');
-        }
-    }, [loginType, navigate]);
-
     return (
         <div className="login-container">
-            <div className="login-buttons">
-                <button
-                    className={`login-button ${loginType === 'user' ? 'active' : ''}`}
-                    onClick={() => handleLoginTypeChange('user')}
-                >
-                    User
-                </button>
-                <button
-                    className={`login-button ${loginType === 'driver' ? 'active' : ''}`}
-                    onClick={() => handleLoginTypeChange('driver')}
-                >
-                    Driver
-                </button>
-                <button
-                    className={`login-button ${loginType === 'admin' ? 'active' : ''}`}
-                    onClick={() => handleLoginTypeChange('admin')}
-                >
-                    Admin
-                </button>
-            </div>
             <form onSubmit={handleSubmit} className="login-form">
                 <p style={{ fontSize: '30px', fontWeight: 'normal' }}>LOG IN YOUR ACCOUNT</p>
-                <p>Don't have an account? <Link to="/signup" onClick={handleSignupClick}>SIGN UP</Link></p>
-                <br /><br /><br /><br />
+                <br /><br />
                 <div>
                     <label>Your Email</label>
                     <input
@@ -153,60 +122,34 @@ const Login = () => {
                 .login-container {
                     max-width: 600px;
                     margin: 30px auto;
-                    padding: 20px;
+                    padding: 100px;
                     font-family: Arial, sans-serif;
-                }
-
-                .login-buttons {
-                    display: flex;
-                    justify-content: center;
-                    margin-bottom: 20px;
-                }
-
-                .login-button {
-                    padding: 10px 40px;
-                    margin: 0 30px;
-                    border: none;
-                    border-radius: 50px;
-                    cursor: pointer;
-                    background-color: white;
-                    border: 1px solid black;
-                    color: black;
-                }
-
-                .login-button.active {
-                    background-color: #318FE7;
-                    color: white;
                 }
 
                 .login-form {
                     display: flex;
                     flex-direction: column;
-                    gap: 5px;
                     align-items: left;
                 }
 
-                .login-form h2 {
-                    text-align: center;
-                }
-
                 .login-form p {
-                    margin-bottom: -15px;
                     text-align: center;
                 }
 
                 .login-form label {
                     display: block;
                     margin-bottom: 15px;
+                    margin-left: 110px;
                 }
 
                 .login-form input[type="email"],
                 .login-form input[type="password"] {
-                    width: 100%;
+                    width: 60%;
                     padding: 10px;
                     margin-bottom: 15px;
                     border: 1px solid #ccc;
                     border-radius: 8px;
+                    margin-left: 110px;
                 }
 
                 .remember-me {
@@ -216,17 +159,20 @@ const Login = () => {
                 }
 
                 .remember-me input {
-                    margin-right: 10px;
+                    margin-right: -100px;
                     margin-bottom: 15px;
+                    margin-left: 110px;
                 }
 
                 .login-submit {
                     padding: 10px 20px;
                     border: none;
-                    border-radius: 50px;
+                    border-radius: 8px;
                     cursor: pointer;
                     background-color: #318FE7;
                     color: white;
+                    width: 65%;
+                    margin-left: 110px;
                 }
             `}</style>
         </div>
