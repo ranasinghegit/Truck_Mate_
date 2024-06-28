@@ -21,7 +21,7 @@ const HomePage = () => {
           <br />
           <div className="subscription-inputt">
             <input className='pls' type="text" placeholder="eg:EC4R 3TE" />
-            <button>Search</button>
+            <button className='serbutt'>Search</button>
           </div>
           <a href="compl">
           <img src="compl.png" className='compl' />

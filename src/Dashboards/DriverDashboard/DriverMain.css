@@ -1,0 +1,42 @@
+.app {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+  }
+  .flex-con{
+    display: flex !important;
+    /* flex-wrap: wrap; */
+    flex: 1;
+  }
+  
+  .sidebar {
+    width: 240px;
+    /* height: 1000px !important; */
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .sidebar button:hover {
+    background-color: #0056b3;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  

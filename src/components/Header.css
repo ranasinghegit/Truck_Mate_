@@ -45,6 +45,20 @@ header {
   border-radius: 10px;
   text-align: center;
 }
+.dropdown-content{
+  background-color: #e8e8ed  !important;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  margin:auto;
+}
+
+
+
+.dropdown-content a:hover {
+  background-color: #2d72c0 !important;
+  color: rgb(1, 1, 1);
+}
 
 .navv a:active {
   background-color: #ffffff;

@@ -1,0 +1,26 @@
+/* src/components/ConfirmedOrders.css */
+.order-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-card h3 {
+    margin-top: 0;
+  }
+  
+  .order-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .order-card button:hover {
+    background-color: #218838;
+  }
+  

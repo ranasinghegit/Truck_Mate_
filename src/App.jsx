@@ -1,46 +1,28 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 
 import HomePage from "./Home/Home";
-import COrderList from "./Dashboards/Customer_Dashboard/COrderList";
-import OrderList from "./Dashboards/driver_dashboard/OrderList";
-// import Login from "./Login&Signup/Login";
-// import SignUp from "./Login&Signup/Signup";
-import AdminPanel from "./Dashboards/AdminPannel/DApp"; 
-
-
-
-// =====================================================
-import Dashboard from "./Dashboards/AdminPannel/DDashboard"; 
-import Orders from './Dashboards/AdminPannel/Orders';
-import OrderDetails from './Dashboards/AdminPannel/OrderDetails';
-import Drivers from './Dashboards/AdminPannel/Drivers';
-import Customers from './Dashboards/AdminPannel/Customers';
+import Login from "./Dashboards/Login";
+import Signup from "./Dashboards/SignUp";
+import DriverMain from "./Dashboards/DriverDashboard/DriverMain";
+import AccountInformation from "./Dashboards/DriverDashboard/AccountInformation";
+import VehicleRegistration from "./Dashboards/VehicleRegistration";
 import "./App.css";
 
 function App() {
+
+ 
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Homepage" element={<HomePage />} />
-        <Route path="/YourProfile" element={<COrderList />} />
-        <Route path="/YourProfileD" element={<OrderList />} />
-        <Route path="/YourProfileA/*" element={<AdminPanel />} />
-        {/* <Route path="/Login/Signup" element={<Login />} /> */}
-        {/* <Route path="/SignUP" element={<SignUp/>}/> */}
-
-
-
-        {/* ================================================ */}
-        <Route path="/" element={<Dashboard />} />
-          <Route path="/orders" element={<Orders />} />
-          <Route path="/orders/:id" element={<OrderDetails />} />
-          <Route path="/drivers" element={<Drivers />} />
-          <Route path="/customers" element={<Customers />} />
-
-
-
+        <Route path="/Login/Signup" element={<Login />} />
+        <Route path="/SignUp" element={<Signup />} />
+        <Route path="/DriverD" element={<DriverMain />} />
+        <Route path="/AccountInformation" element={<AccountInformation />} />
+        <Route path="/VehicleRegistration" element={<VehicleRegistration />} />
       </Routes>
     </BrowserRouter>
   );
